@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fetrahenintsoa/RatsimaharisonFetra_3_03052021.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fetrahenintsoa/RatsimaharisonFetra_3_03052021/issues"
+  },
+  "homepage": "https://github.com/fetrahenintsoa/RatsimaharisonFetra_3_03052021#readme",
   "dependencies": {
     "sass": "^1.32.12"
   }
