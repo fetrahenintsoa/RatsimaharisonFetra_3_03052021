@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Ohmyfood</title>
+    <!--faire une petite icone-->
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="/.public/css/style.css" />
     <script
       src="https://kit.fontawesome.com/440f033e08.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!--HEADER-->
     <header>
       <div class="header-first">
         <img
-          src="public/img/logo/ohmyfood.png"
+          src=".public/img/logo/ohmyfood.png"
           class="header-first__img"
           alt="logo"
         />
       </div>
     </header>
+    <!--MAIN-->
     <main>
+      <!--AT THE BOTTOM OH THE TITLE-->
       <section class="reservation">
         <div class="reservation__search">
           <i class="fas fa-map-marker-alt"></i>
           <input
             type="text"
-            class="reservation__search__text"
+            class="reservation__search--text"
             value="Paris,Belleville"
             name="search"
           />
@@ -38,21 +43,25 @@
           <p>Explorer nos restaurants</p>
         </button>
       </section>
+      <!--FONCTIONNEMENT-->
       <section class="fonctionning">
         <h2 class="fonctionning__title">Fonctionnement</h2>
-        <div class="fonctionning__list">
-          <span class="fonctionning__list__number">1</span>
-          <i class="fas fa-mobile-alt">Choisissez un restaurant</i>
-        </div>
-        <div class="fonctionning__list">
-          <span class="fonctionning__list__number">2</span>
-          <i class="fas fa-list-ul">Composez votre menu</i>
-        </div>
-        <div class="fonctionning__list">
-          <span class="fonctionning__list__number">3</span>
-          <i class="fas fa-store">Déguster au restaurant</i>
+        <div class="choice">
+          <div class="fonctionning__list">
+            <span class="fonctionning__list__number">1</span>
+            <i class="fas fa-mobile-alt">Choisissez un restaurant</i>
+          </div>
+          <div class="fonctionning__list">
+            <span class="fonctionning__list__number">2</span>
+            <i class="fas fa-list-ul">Composez votre menu</i>
+          </div>
+          <div class="fonctionning__list">
+            <span class="fonctionning__list__number">3</span>
+            <i class="fas fa-store">Déguster au restaurant</i>
+          </div>
         </div>
       </section>
+      <!--RESTAURANTS-->
       <section class="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurants__card">
@@ -97,6 +106,7 @@
         </div>
       </section>
     </main>
+    <!--FOOTER-->
     <footer>
       <ul class="footer__list">
         <li>ohmyfood</li>
