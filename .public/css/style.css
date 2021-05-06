@@ -19,6 +19,7 @@ li {
 
 .reservation {
   text-align: center;
+  background: #f2f2f2;
 }
 .reservation__search {
   width: 100%;
@@ -47,6 +48,7 @@ li {
 .fonctionning {
   display: flex;
   flex-direction: column;
+  margin-bottom: 66px;
 }
 .fonctionning__title {
   font-weight: 600;
@@ -57,6 +59,8 @@ li {
   flex-direction: column;
   width: auto;
   justify-content: space-evenly;
+  padding: 0 40px;
+  gap: 20px;
 }
 
 .list {
@@ -78,15 +82,9 @@ li {
   padding-left: 20px;
 }*/
 /*RESTAURANT*/
-.thecards {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .restaurants {
-  width: 100%;
+  background: #f2f2f2;
+  padding: 20px 40px;
 }
 
 .bloc-cards {
@@ -131,19 +129,19 @@ figure img {
   padding: 10px 10px 10px 10px;
   border: 0px solid transparent;
   border-radius: 3px;
-  margin-top: -240px;
-  margin-left: 240px;
   color: green;
   font-weight: 900;
 }
 
 .heart {
   position: absolute;
-  margin-left: 280px;
-  margin-top: -70px;
   background: #fff;
   color: black;
-  font-size: 25px;
+  font-size: 32px;
+  display: flex;
+  bottom: 15px;
+  right: 15px;
+  justify-content: center;
 }
 
 /*FOOTER*/
@@ -156,17 +154,19 @@ footer {
 
 .footer__title {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding: 20px 0 0px 10px;
   font-family: "Shrikhand";
 }
 
 .footer__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px 10px;
+  line-height: 1.7;
+  margin: 0;
 }
 
 @media all and (min-width: 768px) {
@@ -177,6 +177,46 @@ footer {
   .choice {
     display: flex;
     flex-direction: column;
+  }
+
+  .thecards {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /*RESTAURANTS*/
+  .thecards {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /*FOOTER*/
+  footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    height: 195px;
+  }
+
+  .footer__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    font-family: "Shrikhand";
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 

@@ -23,6 +23,7 @@ li {
 
 .reservation {
   text-align: center;
+  background: #f2f2f2;
 }
 
 .reservation__search {
@@ -58,6 +59,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 66px;
 }
 
 .fonctionning__title {
@@ -76,6 +78,8 @@ li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 0 40px;
+  gap: 20px;
 }
 
 .list {
@@ -98,20 +102,9 @@ li {
   padding-left: 20px;
 }*/
 /*RESTAURANT*/
-.thecards {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 .restaurants {
-  width: 100%;
+  background: #f2f2f2;
+  padding: 20px 40px;
 }
 
 .bloc-cards {
@@ -161,19 +154,23 @@ figure img {
   padding: 10px 10px 10px 10px;
   border: 0px solid transparent;
   border-radius: 3px;
-  margin-top: -240px;
-  margin-left: 240px;
   color: green;
   font-weight: 900;
 }
 
 .heart {
   position: absolute;
-  margin-left: 280px;
-  margin-top: -70px;
   background: #fff;
   color: black;
-  font-size: 25px;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 15px;
+  right: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*FOOTER*/
@@ -188,12 +185,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   width: 100%;
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding: 20px 0 0px 10px;
   font-family: "Shrikhand";
 }
 
@@ -201,13 +197,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 10px 10px;
+  line-height: 1.7;
+  margin: 0;
 }
 
 @media all and (min-width: 768px) {
@@ -222,6 +221,65 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .thecards {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /*RESTAURANTS*/
+  .thecards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /*FOOTER*/
+  footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.781);
+    color: #fff;
+    height: 195px;
+  }
+  .footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    font-family: "Shrikhand";
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=style.css.map */
