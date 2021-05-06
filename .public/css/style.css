@@ -12,9 +12,9 @@ li {
 }
 
 .header-first {
-  color: aquamarine;
-  text-align: center;
-  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand";
 }
 
 .reservation {
@@ -22,8 +22,13 @@ li {
 }
 .reservation__search {
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: #975252;
   padding: 20px 0;
+  border: transparent;
+}
+
+.reservation__search--text {
+  border: transparent transparent transparent transparent;
 }
 
 .reservation__heading {
@@ -38,6 +43,7 @@ li {
   padding: 0 20px;
 }
 
+/*FONCTIONNEMENT*/
 .fonctionning {
   display: flex;
   flex-direction: column;
@@ -46,9 +52,132 @@ li {
   font-weight: 600;
 }
 
-.fonctionning__list {
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-evenly;
+}
+
+.list {
+  background-color: #f2f2f2;
+  padding: 37px 70px 28px 70px;
+  border-radius: 25px 25px;
+  position: relative;
+}
+.list__number {
+  background: #9356dc;
+  color: #fff;
+  position: absolute;
+  border-radius: 25px 25px;
+  margin-left: -78px;
+  padding: 5px 10px;
+}
+
+/*span > i {
+  padding-left: 20px;
+}*/
+/*RESTAURANT*/
+.thecards {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.restaurants {
+  width: 100%;
+}
+
+.bloc-cards {
+  height: 250px;
+  flex: 2;
+  margin-bottom: 25px;
+  border: 3px solid red;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  line-height: 5px;
+}
+.bloc-cards__title {
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+  padding-left: 13px;
+}
+.bloc-cards__place {
+  color: black;
+  padding-left: 13px;
+  padding-bottom: 15px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  height: 170px;
+}
+
+figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.new {
+  position: absolute;
+  z-index: 10;
+  background: #99e2d0;
+  padding: 10px 10px 10px 10px;
+  border: 0px solid transparent;
+  border-radius: 3px;
+  margin-top: -240px;
+  margin-left: 240px;
+  color: green;
+  font-weight: 900;
+}
+
+.heart {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -70px;
+  background: #fff;
+  color: black;
+  font-size: 25px;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.781);
+  color: #fff;
+  height: 195px;
+}
+
+.footer__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  font-family: "Shrikhand";
+}
+
+.footer__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media all and (min-width: 768px) {
+  .reservation {
+    background: #f2f2f2;
+  }
+
+  .choice {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
