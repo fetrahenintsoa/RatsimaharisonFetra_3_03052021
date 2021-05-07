@@ -21,6 +21,10 @@ h2 {
   font-family: "roboto:wgt@700";
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 .header-first {
   display: flex;
   justify-content: center;
@@ -202,6 +206,72 @@ footer {
   margin: 0;
 }
 
+/*PALETTE.HTML*/
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.header-other {
+  font-family: "Shrikhand";
+  padding-bottom: 0;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+/*resto-img/other page*/
+.resto-all__img {
+  height: 350px;
+  width: 100vw;
+  object-fit: cover;
+  /*position: relative;*/
+}
+
+/*resto-menu*/
+.resto-menu {
+  background: #f2f2f2;
+  padding: 0 20px;
+}
+.resto-menu__title {
+  margin: 0 0 0 0;
+  font-size: 32px;
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: space-around;
+  /*margin-top: -40px;*/
+  /*position: absolute;*/
+  width: 100vw;
+}
+
+.resto-menu__cards {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  line-height: 0.8;
+  border-radius: 15px 15px;
+}
+
+.resto-menu__dish {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h3 {
+  border-bottom: #99e2d0;
+}
+
+/*MEDIA@*/
 @media all and (min-width: 768px) {
   body {
     max-width: 1440px;
