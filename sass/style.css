@@ -135,6 +135,9 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .list p {
@@ -288,6 +291,7 @@ main {
 .resto-all__img {
   height: 350px;
   width: 100vw;
+  max-width: 1440px;
   -o-object-fit: cover;
      object-fit: cover;
   /*position: relative;*/
@@ -308,6 +312,7 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  max-width: 1440px;
   /*margin-top: -40px;*/
   /*position: absolute;*/
   width: 100vw;
@@ -318,7 +323,7 @@ main {
   margin-bottom: 20px;
   padding: 0 15px;
   line-height: 0.8;
-  border-radius: 15px 15px;
+  border-radius: 15px;
 }
 
 .resto-menu__dish {
