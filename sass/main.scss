@@ -62,7 +62,7 @@ h3 {
     );
     color: #fff;
     border-radius: 25px 25px;
-    padding: 0 20px;
+    padding: 20px 20px;
     border: 0px;
     &--other {
       color: black;
@@ -175,9 +175,8 @@ figure img {
   border-radius: 3px;
   color: rgba(0, 128, 0, 0.63);
   font-weight: 900;
-
-  margin-top: 20px;
-  margin-right: 40px;
+  top: 10px;
+  right: 20px;
 }
 .heart {
   position: absolute;
@@ -185,7 +184,7 @@ figure img {
   color: black;
   font-size: 32px;
   display: flex;
-  bottom: 80px;
+  bottom: 30px;
   right: 15px;
   justify-content: center;
   border: none;
@@ -213,7 +212,7 @@ footer {
   line-height: 1.7;
   margin: 0;
 }
-/*PALETTE.HTML*/
+/**************OTHER.HTML***********/
 main {
   margin: 0;
   padding: 0;
@@ -244,8 +243,8 @@ main {
 /*resto-menu*/
 .resto-menu {
   background: #f2f2f2;
-  padding: 0 20px;
-  margin-bottom: 30px;
+  padding: 0 20px 30px 20px;
+
   &__title {
     margin: 0 0 0 0;
     font-size: 32px;
@@ -256,7 +255,11 @@ main {
     /*margin-top: -40px;*/
 
     /*position: absolute;*/
-    width: 100vw;
+  }
+  &__icon {
+    border: none;
+    font-size: 32px;
+    font-weight: lighter;
   }
   &__subtitle {
     border-bottom: 2px solid $tertiary;
@@ -275,6 +278,9 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    &--price {
+      font-weight: bold;
+    }
   }
 }
 
@@ -318,6 +324,11 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  /*BOUTON*/
+  .heart {
+    bottom: 90px;
+    right: 15px;
   }
   /*FOOTER*/
   footer {
