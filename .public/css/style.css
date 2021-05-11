@@ -214,6 +214,11 @@ footer {
   margin: 0;
 }
 
+li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /**************OTHER.HTML***********/
 main {
   margin: 0;
