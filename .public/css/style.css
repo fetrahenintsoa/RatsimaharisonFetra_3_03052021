@@ -61,8 +61,11 @@ h3 {
   padding: 20px 20px;
   border: 0px;
 }
+.reservation__button:hover {
+  opacity: 0.7;
+}
 .reservation__button--other {
-  color: black;
+  color: #fff;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -115,10 +118,13 @@ h3 {
   justify-content: space-between;
 }
 
-.list p {
-  flex: 2;
+.choice :hover {
+  background: #ddc9f7;
 }
 
+/*a:hover {
+  background: black;
+}*/
 /*RESTAURANT*/
 .restaurants {
   background: #f2f2f2;

@@ -64,9 +64,12 @@ h3 {
     border-radius: 25px 25px;
     padding: 20px 20px;
     border: 0px;
+    &:hover {
+      opacity: 0.7;
+    }
 
     &--other {
-      color: black;
+      color: #fff;
       text-align: center;
       display: flex;
       justify-content: center;
@@ -108,10 +111,6 @@ h3 {
     margin-left: -78px;
     padding: 5px 10px;
     top: 10px;
-    &:hover {
-      background-color: black;
-      cursor: pointer;
-    }
   }
 }
 
@@ -122,9 +121,13 @@ h3 {
   width: 100%;
   justify-content: space-between;
 }
-.list p {
-  flex: 2;
+.choice :hover {
+  background: #ddc9f7;
 }
+
+/*a:hover {
+  background: black;
+}*/
 
 /*RESTAURANT*/
 
