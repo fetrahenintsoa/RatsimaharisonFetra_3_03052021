@@ -64,7 +64,10 @@ h3 {
     border-radius: 25px 25px;
     padding: 20px 20px;
     border: 0px;
+    transform: scale(1);
+    transition: transform 400ms;
     &:hover {
+      transform: scale(1.15);
       opacity: 0.7;
     }
 
@@ -250,13 +253,18 @@ main {
   width: 100vw;
   max-width: 1440px;
   object-fit: cover;
+  z-index: 1;
 
   /*position: relative;*/
 }
 /*resto-menu*/
 .resto-menu {
   background: #f2f2f2;
-  padding: 0 20px 30px 20px;
+  padding: 10px 20px 30px 20px;
+  margin-top: -50px;
+  z-index: 2;
+  position: relative;
+  border-radius: 50px 50px 0 0;
 
   &__title {
     margin: 0 0 0 0;
