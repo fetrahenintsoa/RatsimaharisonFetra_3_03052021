@@ -1,0 +1,82 @@
+.header-first {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand";
+  padding-bottom: 0;
+}
+
+.reservation {
+  text-align: center;
+  background: $background-grey;
+  padding-bottom: 40px;
+
+  &__search {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 20px 0;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.089);
+    border: transparent;
+    &--text {
+      border: 0px;
+      background-color: transparent;
+    }
+  }
+}
+
+/*RESTAURANT*/
+
+.restaurants {
+  background: $background-grey;
+  padding: 20px 20px;
+  &__cards {
+    position: relative;
+  }
+}
+
+.bloc-cards {
+  height: 250px;
+  flex: 2;
+  margin-bottom: 50px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  line-height: 5px;
+  text-decoration: none;
+
+  &__title {
+    color: black;
+    padding-top: 5px;
+    padding-left: 13px;
+  }
+  &__place {
+    color: black;
+    padding-left: 13px;
+    padding-bottom: 15px;
+    text-decoration: none;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  height: 170px;
+}
+figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+.new {
+  position: absolute;
+  z-index: 10;
+  background: $tertiary;
+  padding: 10px 10px 10px 10px;
+  border: 0px solid transparent;
+  border-radius: 3px;
+  color: rgba(0, 128, 0, 0.63);
+  font-weight: 900;
+  top: 10px;
+  right: 20px;
+}

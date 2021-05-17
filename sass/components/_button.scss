@@ -1,0 +1,28 @@
+.reservation {
+  &__heading {
+    font-weight: 700;
+    font-family: "roboto";
+  }
+  &__button {
+    background: rgb(147, 86, 220);
+    background: $button;
+    color: $background-white;
+    border-radius: 25px 25px;
+    padding: 20px 20px;
+    border: 0px;
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover {
+      transform: scale(1.15);
+      opacity: 0.7;
+    }
+
+    &--other {
+      color: $background-white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+  }
+}

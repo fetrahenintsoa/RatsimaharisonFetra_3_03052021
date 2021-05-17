@@ -1,0 +1,51 @@
+/*FONCTIONNEMENT*/
+.fonctionning {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 66px;
+  &__title {
+    padding-left: 30px;
+    padding-top: 55px;
+  }
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: space-evenly;
+  padding: 0 0px;
+  gap: 10px;
+}
+.list {
+  background-color: $background-grey;
+  padding: 15px 70px 15px 70px;
+  border-radius: 25px 25px;
+  position: relative;
+  box-shadow: 5px 3px 5px rgb(209, 209, 209);
+  margin: 10px 20px;
+
+  &__number {
+    background: $primary;
+    color: #fff;
+    position: absolute;
+    border-radius: 25px 25px;
+    margin-left: -78px;
+    padding: 5px 10px;
+    top: 10px;
+  }
+}
+
+.list i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.choice :hover {
+  background: #ddc9f7;
+}
+
+/*a:hover {
+    background: black;
+  }*/

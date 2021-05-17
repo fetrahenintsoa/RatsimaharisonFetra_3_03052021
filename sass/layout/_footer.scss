@@ -1,0 +1,25 @@
+/*FOOTER*/
+footer {
+  background: rgba(0, 0, 0, 0.781);
+  color: #fff;
+  height: 195px;
+}
+.footer__title {
+  display: flex;
+  justify-content: start;
+
+  padding: 20px 0 0px 10px;
+  font-family: "Shrikhand";
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10px 10px;
+  line-height: 1.7;
+  margin: 0;
+}
+li > a {
+  color: #fff;
+  text-decoration: none;
+}
