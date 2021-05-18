@@ -11,12 +11,9 @@
 @import "./components/functionning";
 @import "./components/heart";
 @import "./layout/first-pages";
+@import "./layout/checkbox";
 /*MEDIA@*/
 @media all and (min-width: 768px) {
-  body {
-    max-width: 1440px;
-    margin: auto;
-  }
   .reservation {
     background: $background-grey;
   }

@@ -60,19 +60,60 @@ main {
   &__cards {
     background: #fff;
     margin-bottom: 20px;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     line-height: 0.8;
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px 2px #d5d5d5;
+    cursor: pointer;
+    /*overflow: hidden;*/
+    /*animation: pazzapa 400ms ease-in-out both;
+    
+    /* @keyframes pazzapa {
+        0% {
+          opacity: 0;
+          transform: translateY(100%) scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: translateY(0) scale(1.05);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }*/
   }
   &__dish {
     display: flex;
-    flex-direction: row;
+
     align-items: center;
     justify-content: space-between;
     &--price {
       font-weight: bold;
     }
   }
+}
+
+.checkbox {
+  background: $tertiary;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 15px 15px 0;
+  align-content: center;
+  position: relative;
+  padding: 33px 20px 30px 20px;
+  /*transition: all 500ms ease-in-out;*/
+  /*transform: translateX(53px) scaleX(0);*/
+  /*transform-origin: right;*/
+  /*&:hover {
+    transform: scaleX(1);
+    opacity: 1;
+    transform-origin: right;
+    width: 60px;
+  }*/
 }
 
 .h3 {
