@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 999;
   font-family: "Shrikhand";
-  animation: disapear forwards;
+  animation: disseapear forwards;
   animation-delay: 3s;
 }
 .lettre {
@@ -17,11 +17,10 @@
   font-size: 80px;
   margin-bottom: 150px;
   animation: flash 2s linear infinite;
-
-  transform: rotate(10deg);
+  transform: rotate(2deg);
 }
 
-@keyframes disapear {
+@keyframes disseapear {
   from {
     transform: translateX(0px);
   }
