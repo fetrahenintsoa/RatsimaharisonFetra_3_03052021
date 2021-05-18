@@ -14,6 +14,9 @@
 @import "./layout/checkbox";
 /*MEDIA@*/
 @media all and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
   .reservation {
     background: $background-grey;
   }

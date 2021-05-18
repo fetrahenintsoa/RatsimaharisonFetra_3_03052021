@@ -36,16 +36,26 @@ h3 {
   align-items: center;
   z-index: 999;
   font-family: "Shrikhand";
+  animation: disapear forwards;
+  animation-delay: 3s;
 }
 
 .lettre {
   color: #484848;
   font-size: 80px;
   margin-bottom: 150px;
-  animation: flash 1.6s linear infinite;
+  animation: flash 2s linear infinite;
   transform: rotate(10deg);
 }
 
+@keyframes disapear {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translate(-9999px);
+  }
+}
 @keyframes flash {
   0% {
     color: #ff79d0;
@@ -450,6 +460,10 @@ figure img {
 
 /*MEDIA@*/
 @media all and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
+
   .reservation {
     background: #f2f2f2;
   }
