@@ -42,7 +42,7 @@ h3 {
 
 .lettre {
   color: #484848;
-  font-size: 80px;
+  font-size: 40px;
   margin-bottom: 150px;
   animation: flash 2s linear infinite;
   transform: rotate(2deg);
@@ -358,7 +358,7 @@ main {
 }
 
 .choice :hover {
-  background: #ddc9f7;
+  background: #efe4fd;
 }
 
 /*a:hover {
@@ -429,6 +429,9 @@ main {
 }
 .restaurants__cards {
   position: relative;
+}
+.restaurants__cards:hover {
+  transform: scale(1.03);
 }
 
 .bloc-cards {
