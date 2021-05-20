@@ -246,8 +246,17 @@ main {
   box-shadow: 0 3px 6px 2px #d5d5d5;
   cursor: pointer;
   overflow: hidden;
+  /*..................hover/checkbox..........*/
   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$se charge un par un********************************************/
   animation: pazzapa 400ms ease-in-out both;
+}
+.resto-menu__cards:hover > .checkbox {
+  transform: scaleX(1);
+  opacity: 1;
+  width: 60px;
+}
+.resto-menu__cards:hover > .checkbox i {
+  transform: rotate(-1turn);
 }
 .resto-menu__cards:nth-child(1) {
   animation-delay: 0.2s;
@@ -286,25 +295,21 @@ main {
 .resto-menu__dish--price {
   font-weight: bold;
 }
-
-.checkbox {
+.resto-menu .checkbox {
   background: #99e2d0;
   color: #fff;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   border-radius: 0 15px 15px 0;
   align-content: center;
-  position: relative;
-  padding: 33px 20px 30px 20px;
-  /*transition: all 500ms ease-in-out;*/
-  /*transform: translateX(53px) scaleX(0);*/
-  /*transform-origin: right;*/
-  /*&:hover {
-    transform: scaleX(1);
-    opacity: 1;
-    transform-origin: right;
-    width: 60px;
-  }*/
+  /*position: relative;*/
+  padding: 33px 10px 30px 10px;
+  transition: all 500ms ease-in-out;
+  transform: translate(57px);
+}
+.resto-menu .checkbox i {
+  transform: rotate(1turn);
+  transition: all 500ms ease-in-out;
 }
 
 .h3 {
@@ -377,7 +382,6 @@ main {
   overflow: hidden;
   width: auto;
   background: #fff;
-  background-repeat: no-repeat;
   background-position: center 27px;
   transform: scale(1);
   transform-origin: bottom;
@@ -386,6 +390,7 @@ main {
 }
 .heart:hover {
   transform: scaleY(1);
+  background-repeat: no-repeat;
   opacity: 0.7;
   cursor: pointer;
   background: linear-gradient(5deg, #9356dc, #ff79da);
