@@ -68,6 +68,15 @@ main {
     box-shadow: 0 3px 6px 2px #d5d5d5;
     cursor: pointer;
     overflow: hidden;
+    /*..................hover/checkbox..........*/
+    &:hover > .checkbox {
+      transform: scaleX(1);
+      opacity: 1;
+      width: 60px;
+      i {
+        transform: rotate(-1turn);
+      }
+    }
     /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$se charge un par un********************************************/
     animation: pazzapa 400ms ease-in-out both;
     &:nth-child(1) {
@@ -109,26 +118,23 @@ main {
       font-weight: bold;
     }
   }
-}
 
-.checkbox {
-  background: $tertiary;
-  color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  border-radius: 0 15px 15px 0;
-  align-content: center;
-  position: relative;
-  padding: 33px 20px 30px 20px;
-  /*transition: all 500ms ease-in-out;*/
-  /*transform: translateX(53px) scaleX(0);*/
-  /*transform-origin: right;*/
-  /*&:hover {
-    transform: scaleX(1);
-    opacity: 1;
-    transform-origin: right;
-    width: 60px;
-  }*/
+  .checkbox {
+    background: $tertiary;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0 15px 15px 0;
+    align-content: center;
+    /*position: relative;*/
+    padding: 33px 10px 30px 10px;
+    transition: all 500ms ease-in-out;
+    transform: translate(57px);
+    i {
+      transform: rotate(1turn);
+      transition: all 500ms ease-in-out;
+    }
+  }
 }
 
 .h3 {
