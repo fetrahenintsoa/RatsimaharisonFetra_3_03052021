@@ -250,12 +250,12 @@ main {
   /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$se charge un par un********************************************/
   animation: pazzapa 400ms ease-in-out both;
 }
-.resto-menu__cards:hover > .checkbox {
+.resto-menu__cards:hover > .price-checkbox {
   transform: scaleX(1);
   opacity: 1;
-  width: 60px;
+  width: -60px;
 }
-.resto-menu__cards:hover > .checkbox i {
+.resto-menu__cards:hover > .price-checkbox i {
   transform: rotate(-1turn);
 }
 .resto-menu__cards:nth-child(1) {
@@ -289,11 +289,13 @@ main {
 }
 .resto-menu__dish {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .resto-menu__dish--price {
   font-weight: bold;
+  padding-right: 15px;
+  padding-bottom: 10px;
 }
 .resto-menu .checkbox {
   background: #99e2d0;
@@ -301,18 +303,22 @@ main {
   display: flex;
   justify-content: space-around;
   border-radius: 0 15px 15px 0;
-  align-content: center;
+  width: 65px;
+  padding: 35px 15px 33px 15px;
   /*position: relative;*/
-  padding: 33px 10px 30px 10px;
-  transition: all 500ms ease-in-out;
-  transform: translate(57px);
 }
-.resto-menu .checkbox i {
+.resto-menu .price-checkbox {
+  position: relative;
+  display: flex;
+  align-content: center;
+  transition: all 500ms ease-in-out;
+  transform: translate(100px);
+}
+.resto-menu .price-checkbox i {
   transform: rotate(1turn);
   transition: all 500ms ease-in-out;
 }
-
-.h3 {
+.resto-menu .h3 {
   border-bottom: #99e2d0;
 }
 

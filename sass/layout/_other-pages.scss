@@ -69,10 +69,10 @@ main {
     cursor: pointer;
     overflow: hidden;
     /*..................hover/checkbox..........*/
-    &:hover > .checkbox {
+    &:hover > .price-checkbox {
       transform: scaleX(1);
       opacity: 1;
-      width: 60px;
+      width: -60px;
       i {
         transform: rotate(-1turn);
       }
@@ -111,11 +111,13 @@ main {
   }
   &__dish {
     display: flex;
-
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
+
     &--price {
       font-weight: bold;
+      padding-right: 15px;
+      padding-bottom: 10px;
     }
   }
 
@@ -125,18 +127,25 @@ main {
     display: flex;
     justify-content: space-around;
     border-radius: 0 15px 15px 0;
-    align-content: center;
+    width: 65px;
+    padding: 35px 15px 33px 15px;
+
     /*position: relative;*/
-    padding: 33px 10px 30px 10px;
+  }
+  .price-checkbox {
+    position: relative;
+    display: flex;
+    align-content: center;
+
     transition: all 500ms ease-in-out;
-    transform: translate(57px);
+    transform: translate(100px);
     i {
       transform: rotate(1turn);
       transition: all 500ms ease-in-out;
     }
   }
-}
 
-.h3 {
-  border-bottom: #99e2d0;
+  .h3 {
+    border-bottom: #99e2d0;
+  }
 }
