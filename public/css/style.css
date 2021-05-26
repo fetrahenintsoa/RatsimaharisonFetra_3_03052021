@@ -21,10 +21,6 @@ h2 {
   font-family: "roboto:wgt@700";
 }
 
-h3 {
-  text-transform: uppercase;
-}
-
 /*******************loader chargement*******************/
 .loader {
   position: absolute;
@@ -382,6 +378,7 @@ main {
   display: flex;
   bottom: 30px;
   right: 15px;
+  padding: 0;
   justify-content: center;
   border: none;
   position: absolute;
@@ -460,6 +457,7 @@ main {
   color: black;
   padding-top: 5px;
   padding-left: 13px;
+  text-decoration: none;
 }
 .bloc-cards__place {
   color: black;
