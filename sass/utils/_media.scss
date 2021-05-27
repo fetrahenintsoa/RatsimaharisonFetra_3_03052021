@@ -1,0 +1,76 @@
+@media all and (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .reservation {
+    background: $background-grey;
+  }
+  .choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .thecards {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /*RESTAURANTS*/
+  .thecards {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    grid-template-rows: repeat(2, 50%);
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    height: max-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .threesection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /*BOUTON*/
+  .heart {
+    bottom: 90px;
+    right: 15px;
+  }
+  /*FOOTER*/
+  footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.781);
+    color: $background-white;
+    height: 195px;
+  }
+  .footer__title {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 29px;
+    padding-bottom: 30px;
+    font-family: "Shrikhand";
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1367px) {
+  body {
+    max-width: 1367px;
+  }
+  .threesection {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
