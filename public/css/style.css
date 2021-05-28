@@ -480,6 +480,10 @@ main {
   transform: scale(1.03);
 }
 
+.restaurants__cards a {
+  text-decoration: none;
+}
+
 .bloc-cards {
   height: 250px;
   flex: 2;
