@@ -165,6 +165,11 @@ footer {
   cursor: pointer;
 }
 
+li {
+  display: flex;
+  flex-direction: column;
+}
+
 li > a {
   color: #fff;
   text-decoration: none;
@@ -188,8 +193,9 @@ main {
 
 .fa-arrow-left {
   position: absolute;
-  left: 5px;
+  left: 10px;
   top: 15px;
+  color: #000;
 }
 
 /*resto-img/other page*/

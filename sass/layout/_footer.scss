@@ -20,6 +20,10 @@ footer {
   margin: 0;
   cursor: pointer;
 }
+li {
+  display: flex;
+  flex-direction: column;
+}
 li > a {
   color: #fff;
   text-decoration: none;
