@@ -31,7 +31,7 @@
     border-radius: 25px 25px;
     margin-left: -78px;
     padding: 5px 10px;
-    top: 10px;
+    top: 20px;
   }
 }
 
@@ -41,6 +41,13 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  color: rgb(163, 163, 163);
+  &:hover {
+    color: $primary;
+  }
+}
+.list p {
+  color: #000;
 }
 .choice :hover {
   background: #efe4fd;

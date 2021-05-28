@@ -353,7 +353,7 @@ main {
   border-radius: 25px 25px;
   margin-left: -78px;
   padding: 5px 10px;
-  top: 10px;
+  top: 20px;
 }
 
 .list i {
@@ -362,6 +362,14 @@ main {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  color: #a3a3a3;
+}
+.list i:hover {
+  color: #9356dc;
+}
+
+.list p {
+  color: #000;
 }
 
 .choice :hover {
