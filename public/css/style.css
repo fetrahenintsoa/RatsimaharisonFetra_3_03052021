@@ -128,10 +128,12 @@ h2 {
   border: 0px;
   transform: scale(1);
   transition: transform 400ms;
+  box-shadow: 0 2px 6px 4px #d5d5d5;
 }
 .reservation__button:hover {
   transform: scale(1.15);
   opacity: 0.7;
+  box-shadow: 0 2px 6px 4px #b3b1b1;
 }
 .reservation__button--other {
   color: #fff;
@@ -392,7 +394,6 @@ main {
   font-size: 32px;
   bottom: 30px;
   right: 15px;
-  /* background-repeat: no-repeat;*/
   padding: 0;
   background: #fff;
   transform: scale(1);
@@ -409,7 +410,6 @@ main {
   font-size: 34px;
   transition: 600ms;
   opacity: 1;
-  /*transform: scaleY(1);*/
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   padding: 0;

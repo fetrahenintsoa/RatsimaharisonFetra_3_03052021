@@ -12,9 +12,11 @@
     border: 0px;
     transform: scale(1);
     transition: transform 400ms;
+    box-shadow: 0 2px 6px 4px #d5d5d5;
     &:hover {
       transform: scale(1.15);
       opacity: 0.7;
+      box-shadow: 0 2px 6px 4px #b3b1b1;
     }
 
     &--other {
